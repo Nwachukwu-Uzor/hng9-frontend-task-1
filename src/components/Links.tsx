@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./Container";
 import LinkButton from "./LinkButton";
 
-const Links = () => {
+const Links = (): JSX.Element => {
   return (
     <Container className="flex flex-col gap-4">
       <LinkButton id="btn__zuri" displayText="Twitter Link" to="" />
