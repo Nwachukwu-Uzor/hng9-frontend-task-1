@@ -4,7 +4,7 @@ import Container from "./Container";
 import zuriLogo from "../assets/images/zuri-Logo.svg";
 import I4Logo from "../assets/images/I4G-Logo.svg";
 
-const Footer = (): JSX.Element => {
+const Footer = () => {
   return (
     <Container className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
       <img src={zuriLogo} alt="zuri training" className="h-[20px] lg:h-[30px]" />

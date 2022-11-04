@@ -6,7 +6,7 @@ import LinkButton from "./components/LinkButton";
 import Links from "./components/Links";
 import Logos from "./components/Logos";
 
-const App = (): JSX.Element => {
+const App = () => {
   return (
     <main>
       <Header />

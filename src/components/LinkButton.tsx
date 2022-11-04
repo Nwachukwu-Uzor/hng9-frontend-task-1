@@ -1,12 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-interface props {
-  id: string;
-  displayText: string;
-  to: string;
-}
-
-const LinkButton = ({ id, displayText, to }: props): JSX.Element => {
+const LinkButton = ({ id, displayText, to }) => {
   return (
     <a
       href={to}
@@ -17,6 +12,12 @@ const LinkButton = ({ id, displayText, to }: props): JSX.Element => {
       {displayText}
     </a>
   );
+};
+
+LinkButton.propTypes = {
+  id: PropTypes.string.isRequired,
+  displayText: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
 };
 
 export default LinkButton;
