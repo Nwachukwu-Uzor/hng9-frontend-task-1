@@ -1,18 +1,23 @@
 import React from "react";
-import Container from "./components/Container";
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Layout from "./Layout/Layout";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import LinkButton from "./components/LinkButton";
-import Links from "./components/Links";
-import Logos from "./components/Logos";
+
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <main>
-      <Header />
-      <Links />
-      <Logos />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index={true} element={<Home />} />
+        </Route>
+      </Routes>
+      
     </main>
   );
 };
