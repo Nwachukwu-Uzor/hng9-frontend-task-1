@@ -31,6 +31,12 @@ const Links = () => {
         displayText="Design Books"
         to="https://books.zuri.team/design-rules"
       />
+      <LinkButton
+        id="contact"
+        displayText="Contact Me"
+        to="/contact"
+        stayOnPage={true}
+      />
     </Container>
   );
 };
