@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Container from "./Container";
 import LinkButton from "./LinkButton";
 
@@ -31,12 +32,13 @@ const Links = () => {
         displayText="Design Books"
         to="https://books.zuri.team/design-rules"
       />
-      <LinkButton
-        id="contact"
-        displayText="Contact Me"
+      <Link
         to="/contact"
-        stayOnPage={true}
-      />
+        className="w-full bg-[#EAECF0] font-semibold rounded-md py-6 text-center hover:opacity-75 duration-300"
+        id="contact"
+      >
+        Contact Me
+      </Link>
     </Container>
   );
 };
