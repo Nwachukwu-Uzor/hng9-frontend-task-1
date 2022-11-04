@@ -6,7 +6,7 @@ import I4Logo from "../assets/images/I4G-Logo.svg";
 
 const Footer = () => {
   return (
-    <Container className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
+    <Container className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center border-t-2">
       <img src={zuriLogo} alt="zuri training" className="h-[20px] lg:h-[30px]" />
       <h4 className="font-lg font-semibold">HNG Internship 9 Frontend Task</h4>
       <img src={I4Logo} alt="ingressive for good" className="h-[20px] lg:h-[30px]" />
