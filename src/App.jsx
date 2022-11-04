@@ -1,11 +1,8 @@
 import React from "react";
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Layout from "./Layout/Layout";
-import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 
 import Home from "./pages/Home";
 
@@ -15,9 +12,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index={true} element={<Home />} />
+          <Route element={<Contact />} path="/contact" />
         </Route>
       </Routes>
-      
     </main>
   );
 };
