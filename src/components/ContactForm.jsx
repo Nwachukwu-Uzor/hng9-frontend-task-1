@@ -25,9 +25,13 @@ const ContactForm = () => {
     });
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
-    <form className="flex flex-col gap-5 lg:gap-8 mt-8">
-      <div className="grid lg:grid-cols-2 lg:gap-x-10l gap-y-5 lg:gap-y-0">
+    <form className="flex flex-col gap-5 lg:gap-8 mt-8" onSubmit={handleSubmit}>
+      <div className="grid lg:grid-cols-2 lg:gap-x-10 gap-y-5 lg:gap-y-0">
         <TextInput
           name="firstName"
           label="First Name"
